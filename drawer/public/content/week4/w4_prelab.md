@@ -1,1 +1,0 @@
-Recall the four standard positions of a plane relative to the reference planes (perpendicular to HP, perpendicular to VP, inclined to HP, inclined to VP) — this week works through all four in sequence.
