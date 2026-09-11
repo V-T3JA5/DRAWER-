@@ -1,0 +1,1 @@
+An auxiliary view is projected perpendicular to an inclined surface specifically to show that surface in true shape — it isn't a general-purpose extra view, it exists to solve one problem: foreshortening.

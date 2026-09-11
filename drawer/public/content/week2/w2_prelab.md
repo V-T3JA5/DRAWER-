@@ -1,0 +1,1 @@
+Review the symbol for first-angle projection (the cone/frustum pair) and make sure you can distinguish it from third-angle at a glance — every sheet this term uses first-angle unless stated otherwise.
