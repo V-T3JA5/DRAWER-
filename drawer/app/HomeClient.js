@@ -169,7 +169,7 @@ function ClosingDrawer() {
   return (
     <section ref={ref} className={`closing-drawer ${revealed ? 'is-revealed' : ''}`}>
       <div className="closing-drawer-word">DRAWER</div>
-      <p className="closing-note">add a closing note here</p>
+      <p className="closing-note">Your Egd Guide is being made</p>
     </section>
   );
 }
@@ -183,7 +183,7 @@ function SocialCard({ platform, label, imageSrc }) {
       </span>
       <span className="social-copy">
         <span className="social-label">{label.toUpperCase()}</span>
-        <span className="social-handle">add handle here</span>
+        <span className="social-handle">Will be added soon</span>
       </span>
     </a>
   );
