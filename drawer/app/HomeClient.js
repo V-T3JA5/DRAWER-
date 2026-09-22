@@ -174,16 +174,24 @@ function ClosingDrawer() {
   );
 }
 
-function SocialCard({ platform, label, imageSrc }) {
+function SocialCard({ platform, label, imageSrc, href }) {
   return (
-    <a href="#" onClick={(e) => e.preventDefault()} className={`social-card ${platform}`} aria-label={label}>
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`social-card ${platform}`}
+      aria-label={label}
+    >
       <CornerMarks />
+
       <span className={`social-badge ${platform}`}>
         <SocialBadgeImage src={imageSrc} />
       </span>
+
       <span className="social-copy">
         <span className="social-label">{label.toUpperCase()}</span>
-        <span className="social-handle">Will be added soon</span>
+        <span className="social-handle">Creator - T</span>
       </span>
     </a>
   );
@@ -191,11 +199,26 @@ function SocialCard({ platform, label, imageSrc }) {
 
 function ClosingSocial() {
   const [ref, revealed] = useRevealed(0.3);
+
   return (
-    <section ref={ref} className={`closing-social ${revealed ? 'is-revealed' : ''}`}>
+    <section
+      ref={ref}
+      className={`closing-social ${revealed ? 'is-revealed' : ''}`}
+    >
       <div className="social-stack">
-        <SocialCard platform="instagram" label="Instagram" imageSrc="/images/instagram-logo.png" />
-        <SocialCard platform="linkedin" label="LinkedIn" imageSrc="/images/linkedin-logo.png" />
+        <SocialCard
+          platform="instagram"
+          label="Instagram"
+          imageSrc="/images/instagram-logo.png"
+          href="https://www.instagram.com/the__craftsman__/"
+        />
+
+        <SocialCard
+          platform="linkedin"
+          label="LinkedIn"
+          imageSrc="/images/linkedin-logo.png"
+          href="https://www.linkedin.com/in/tejas-v-09bb4a423/"
+        />
       </div>
     </section>
   );
